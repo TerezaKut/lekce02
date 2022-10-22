@@ -1,15 +1,139 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
-html { box-sizing: border-box; }
+html { box-sizing: border-box;}
 *, ::after, ::before { box-sizing: inherit; }
 
 body {
 	font-family: sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 1.5;
-	margin: 0;
+	margin:0 auto;
 }
-
 
 /* tady bude tvůj kód */
 
+a {
+	color: white;
+	text-decoration: none;
+	padding: 20px;}
+
+.menu {
+    background-color: rgb(245, 97, 67);
+	position:relative;
+	top:0;
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+}
+
+.paticka {
+    background-color: black;
+	position:relative;
+	bottom:0;
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+}
+
+.box {
+	position:relative;
+	width: 800px;
+	height: 300px;
+	padding: 50px;
+	border: 1px dashed lightgrey;
+	background-color: whitesmoke;
+}
+
+.polozky {
+	position:absolute;
+	top:15px;
+	left:0;
+	
+}
+
+.patickapolozka {
+	top:15px;
+	text-align: center;	
+	color: white;
+	padding:10px;
+
+}
+
+
+.text {
+	margin: 20px 200px;
+	width:800px;
+}
+
+.zelenybox {
+	position:absolute;
+	top:0;
+	left:0;
+	width:220px;
+	height:50px;
+	padding:12px;
+	background-color: rgb(143, 251, 143);
+	text-align: center;
+
+}
+
+.zlutybox {
+	position:absolute;
+	top:50%;
+	right:0;
+	width:220px;
+	height:50px;
+	padding:12px;
+	background-color: rgb(250, 205, 82);
+	text-align: center;
+
+}
+
+.cervenybox {
+	position:absolute;
+	bottom:0;
+	right:50%;
+	width:220px;
+	height:50px;
+	padding:12px;
+	background-color: rgb(246, 30, 30);
+	text-align: center;
+
+}
+
+.modrybox {
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:220px;
+	height:50px;
+	padding:12px;
+	background-color: rgb(30, 106, 246);
+	text-align: center;
+
+}
+
+.email {
+	position:relative;
+	width:250px;
+	height:45px;
+	margin: 30px 270px;	
+	padding:10px;
+	border: 1px solid lightgrey;
+	text-align: left;
+
+}
+
+.kolecko{
+	position:absolute;
+	top:-8px;
+	right:-8px;
+	border-radius: 50%;
+	width:25px;
+	height:25px;
+	background-color: red;
+	color: white;
+	font-size: 10px;
+	padding-top:7px;
+	text-align: center;
+}
